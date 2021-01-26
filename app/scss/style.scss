@@ -1,0 +1,10 @@
+@import "app/scss/_var";
+@import "app/scss/_global";
+@import "app/scss/_fonts";
+
+body {
+	background-color: #000;
+	color: #fff;
+}
+
+@import "app/scss/_media";
