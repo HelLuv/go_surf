@@ -36,6 +36,15 @@ $(function () {
 		arrows: false,
 		asNavFor: '.surf-slider',
 	});
+	$('.travel__slider').slick({
+		infinite: true,
+		slidesToShow: 1,
+		slidesToScroll: 1,
+		fade: true,
+		prevArrow: '<img class="slider-arrows slider-arrows__left" src="images/arrow-left.svg" alt="">',
+		nextArrow: '<img class="slider-arrows slider-arrows__right" src="images/arrow-right.svg" alt="">',
+
+	});
 	// $('div').on('click', function () {
 	// 	$('.slick-current').addClass('.slick-current');
 	// });
