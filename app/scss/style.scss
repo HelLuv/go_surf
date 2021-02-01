@@ -136,6 +136,30 @@
 		}
 	}
 }
+.menu-btn {
+	display: none;
+	width: 50px;
+	height: 50px;
+	justify-content: center;
+	align-items: center;
+	border-radius: 50%;
+	background-color: rgba(#979797, 0.1);
+	border: 1px solid #585858;
+	position: absolute;
+	right: 21px;
+	top: 70px;
+	z-index: 5;
+	&__inner {
+		width: 33px;
+	}
+	&__line {
+		height: 4px;
+		background-color: $green;
+		+ .menu-btn__line {
+			margin-top: 5px;
+		}
+	}
+}
 
 .header__search {
 	padding-top: 15px;
@@ -432,9 +456,11 @@
 }
 
 .surf-box {
-	background-position: center;
-	background-size: cover;
-	background-repeat: no-repeat;
+	&__wrapper {
+		background-position: center;
+		background-size: cover;
+		background-repeat: no-repeat;
+	}
 	&__inner {
 		min-height: 750px;
 		background-color: rgba(#1c2121, 0.85);
